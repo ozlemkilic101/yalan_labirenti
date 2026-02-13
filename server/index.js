@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
 import { GoogleGenAI, Type } from "@google/genai";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const app = express();
 
@@ -84,6 +86,20 @@ KURALLAR:
   } catch (e) {
     res.status(500).json({ error: "Failed to generate case", details: String(e) });
   }
+});
+
+/**
+ * ✅ Frontend (dist) servis et
+ * - Build sonrası dist/ içeriğini yayınlar
+ * - SPA olduğu için tüm diğer yolları index.html'e yönlendirir
+ */
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, "..", "dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "dist", "index.html"));
 });
 
 // Render port
