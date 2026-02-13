@@ -1,20 +1,42 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# Yalan Labirenti
 
-This contains everything you need to run your app locally.
+Yalan Labirenti is an experimental, prompt-driven web game that explores decision-making, narrative uncertainty, and interactive reasoning.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1YoiLyo9kilqcPWNO2Ks8vWzqDALYESF1
+The project was developed as part of an experiment investigating how AI-assisted workflows can accelerate prototyping, creativity, and game mechanics design while keeping human direction in the loop.
 
-## Run Locally
+## 🚀 Project Goals
 
-**Prerequisites:**  Node.js
+- Explore human & AI collaboration in game development  
+- Build dynamic narrative experiences  
+- Experiment with prompt-based interaction models  
+- Rapid prototyping using modern web technologies  
 
+## 🧠 Development Approach
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+This game was created through **AI-assisted development**.  
+High-level design decisions, mechanics, and structure were directed by a human developer, while implementation details, iterations, and refinements were supported through large language model guidance.
+
+In short:  
+**human creativity + AI acceleration**.
+
+## 🛠 Tech Stack
+
+- TypeScript  
+- Vite  
+- React-style component architecture  
+- Modular service structure  
+
+## 🎮 About the Experiment
+
+The aim of this experiment is to understand:
+
+- How quickly ideas can move from concept to playable prototype  
+- How AI can support iteration and creativity  
+- Where human control remains essential in interactive design  
+
+## 📦 Running Locally
+
+```bash
+npm install
+npm run dev
